@@ -22,7 +22,7 @@ public class NQueens {
     public static boolean isSafe(int[][] board,int row,int col)
     {
         //check vertically
-        for(int r = row; r >= 0;r--)
+        for(int r = row; r >= 0;r--  )
         {
             if(board[r][col] == 1)
                 return false;
@@ -32,7 +32,7 @@ public class NQueens {
         int c = col;
         while(r >= 0 && c >= 0)
         {
-            if(board[r][col] == 1)
+            if(board[r][c] == 1)
                 return false;
             r--;
             c--;
@@ -42,7 +42,7 @@ public class NQueens {
         c = col;
         while(r >= 0 && c < board[0].length)
         {
-            if(board[r][col] == 1)
+            if(board[r][c] == 1)
                 return false;
             r--;
             c++;
