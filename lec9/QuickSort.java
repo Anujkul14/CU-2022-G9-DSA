@@ -1,4 +1,4 @@
-package lec8;
+package lec9;
 
 public class QuickSort {
     public static void quickSort(int[] arr,int start,int end)
